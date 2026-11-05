@@ -1,5 +1,7 @@
 # Gears Tactics: Second Chance
 
+![Second Chance - AI-generated promotional artwork](https://github.com/esnqduke/gears-tactics-second-chance/releases/download/v0.2.2/Second-Chance-cover.png)
+
 An open-source mod that gives **fresh player-controlled units one Down But Not Out (DBNO) opportunity on Insane difficulty**.
 
 The first lethal hit downs a fresh unit; after revival, the next lethal hit kills that unit. This behavior was tested on ordinary soldiers and Gabe. Gabe's actual death still causes the expected mission failure.
