@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "source": "Local OpenAI Codex CLI rollout token_usage_record telemetry",
+  "cutoff_description": "Final user confirmation: Gabe died on the second lethal/DBNO attempt and the mission correctly failed; later Git and GitHub/release preparation excluded.",
+  "cutoff_utc": "2026-11-05T03:01:02.064Z",
+  "elapsed_wall_clock_seconds": 18513.371,
+  "agents": [
+    {
+      "role": "main",
+      "model_identifiers_recorded": [
+        "gpt-6.1-sol"
+      ],
+      "reasoning_effort_recorded": [
+        "medium"
+      ],
+      "started_at": "2026-11-04T21:52:28.693Z",
+      "last_included_usage_record_at": "2026-11-05T03:00:01.240Z",
+      "response_count": 522,
+      "usage": {
+        "input_tokens": 94735887,
+        "cached_input_tokens": 93723904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 341130,
+        "reasoning_output_tokens": 160309,
+        "total_tokens": 95077017
+      }
+    },
+    {
+      "role": "code_review",
+      "model_identifiers_recorded": [
+        "gpt-6.1-sol"
+      ],
+      "reasoning_effort_recorded": [
+        "medium"
+      ],
+      "started_at": "2026-11-05T01:02:09.200Z",
+      "last_included_usage_record_at": "2026-11-05T02:09:15.003Z",
+      "response_count": 27,
+      "usage": {
+        "input_tokens": 1189805,
+        "cached_input_tokens": 1092608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7124,
+        "reasoning_output_tokens": 3823,
+        "total_tokens": 1196929
+      }
+    }
+  ],
+  "combined_usage": {
+    "input_tokens": 95925692,
+    "cached_input_tokens": 94816512,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 348254,
+    "reasoning_output_tokens": 164132,
+    "total_tokens": 96273946
+  },
+  "interpretation": {
+    "input_tokens_include_cached": true,
+    "output_tokens_include_reasoning": true,
+    "unique_response_ids_deduplicated": true,
+    "response_sums_match_thread_counters": true,
+    "includes": "The main development conversation and its explicit code-review agent; failed experiments, debugging, automated tests and human gameplay waits are included.",
+    "excludes": "Later repository/publication work, other conversations, infrastructure and automatic approval-review services.",
+    "billing": "Recorded token usage is not a bill or a count of unique written text. Monetary cost was not measured.",
+    "privacy": "No raw chat, model reasoning text, session identifiers, API keys or private profile logs are included."
+  }
+}
