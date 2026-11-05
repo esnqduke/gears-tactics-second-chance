@@ -67,9 +67,11 @@ See [VALIDATION.txt](VALIDATION.txt) for the evidence. These observations apply 
 
 ## Antivirus results
 
-VirusTotal file reports: [DLL](https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122) and [launcher](https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b). These links were supplied by the maintainer; their SHA-256 values match the release files. The assistant could not read the dynamic engine results, so no online detection count or clean-result claim is made.
+**VirusTotal reports positive detections: 5 for the DLL and 6 for the launcher. These have not been confirmed as false positives.** Microsoft flags the launcher as Trojan:Win32/Wacatac.B!ml.
 
-See [ANTIVIRUS.md](ANTIVIRUS.md) for the verified local Kaspersky scan, exact hashes and verification limits.
+Verified through the VirusTotal API on 2026-11-05: [DLL report](https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122) (5 malicious, 66 undetected, 4 unsupported), [launcher report](https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b) (6 malicious, 65 undetected, 4 unsupported). The returned hashes and sizes match the exact release files.
+
+Local Kaspersky separately reported both files OK. See [ANTIVIRUS.md](ANTIVIRUS.md) for all returned detection names, analysis timestamps, the unmodified local report and [sanitized API results](VirusTotal-results-0.2.2.json). No API key is published.
 
 The manifest and published checksums identify the actual tested DLL and launcher. No Microsoft or game DLL is included.
 

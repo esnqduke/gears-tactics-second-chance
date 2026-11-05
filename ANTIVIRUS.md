@@ -21,20 +21,41 @@ Installed Kaspersky 21.26 scanned both payloads on 2026-11-05:
 
 This is a local Kaspersky result, not an online multi-engine scan. No antivirus exclusions or protection settings were changed.
 
-## Online VirusTotal report links
+## VirusTotal results verified through API
 
-The maintainer supplied these VirusTotal file-report links:
+Retrieved on 2026-11-05 from the official VirusTotal v3 file API using a maintainer-provided API key. Returned SHA-256 values and sizes match the exact release payloads and manifest.json. The API key is not included in the repository or release. These are existing analysis results; this check did not request a new analysis.
 
-| Payload | Report |
+| Payload | Malicious | Undetected | Unsupported | Analysis time (UTC) | Report |
+| --- | ---: | ---: | ---: | --- | --- |
+| InsaneDBNO.dll | 5 | 66 | 4 | 2026-11-05T04:09:42.000Z | [VirusTotal](https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122) |
+| InsaneDBNO-Launch.exe | 6 | 65 | 4 | 2026-11-05T04:10:34.000Z | [VirusTotal](https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b) |
+
+Each report contains 75 engine entries: 71 supported verdicts and 4 type-unsupported results. Suspicious, harmless, timeout, confirmed-timeout and failure counts are zero for both files. Undetected means the engine did not detect a threat; it is not a safety certification.
+
+**These are positive antivirus detections, not a clean multi-engine scan. They have not been confirmed as false positives.** In particular, Microsoft reports Trojan:Win32/Wacatac.B!ml for the launcher. The clean local Kaspersky result above does not override these other engines.
+
+### InsaneDBNO.dll
+
+| Engine | Returned detection |
 | --- | --- |
-| InsaneDBNO.dll | [View DLL report](https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122) |
-| InsaneDBNO-Launch.exe | [View launcher report](https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b) |
+| Bkav | W32.Malware.7522396D |
+| CrowdStrike | win/malicious_confidence_60% (D) |
+| APEX | Malicious |
+| Cynet | Malicious (score: 100) |
+| McAfeeD | ti!AAFF926E1315 |
 
-The SHA-256 values in both URLs were checked against the exact release binaries and manifest.json.
+### InsaneDBNO-Launch.exe
 
-**Verification limit:** the release assistant could not retrieve VirusTotal's dynamic report contents. Engine counts, detection names, analysis dates and completion status were not independently verified and are not asserted here. Open the reports to inspect the current results; a file-report URL alone does not prove that an analysis has completed or that a file is clean.
+| Engine | Returned detection |
+| --- | --- |
+| Bkav | W32.Malware.217D8F74 |
+| CrowdStrike | win/malicious_confidence_90% (D) |
+| APEX | Malicious |
+| McAfeeD | ti!6C6DD34828FF |
+| Microsoft | Trojan:Win32/Wacatac.B!ml |
+| Malwarebytes | Malware.Heuristic.2518 |
 
-The local Kaspersky results above were verified separately. No online zero-detection or false-positive claim is made.
+[Sanitized machine-readable API results](VirusTotal-results-0.2.2.json). Report results can change over time; the table records the analysis timestamps returned by the API.
 
 ## What the executable does
 

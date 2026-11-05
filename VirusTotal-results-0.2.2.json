@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "source": "VirusTotal API v3, GET /api/v3/files/{sha256}",
+  "retrieved_on": "2026-11-05",
+  "format": "Sanitized transcription of returned SHA-256, sizes, analysis times, category counts and positive detections. No API key or credentials included.",
+  "reports": [
+    {
+      "file": "InsaneDBNO.dll",
+      "sha256": "aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122",
+      "size": 142848,
+      "last_analysis_date": 1793851782,
+      "stats": {
+        "malicious": 5,
+        "suspicious": 0,
+        "undetected": 66,
+        "harmless": 0,
+        "timeout": 0,
+        "confirmed-timeout": 0,
+        "failure": 0,
+        "type-unsupported": 4
+      },
+      "detections": [
+        {
+          "engine": "Bkav",
+          "category": "malicious",
+          "result": "W32.Malware.7522396D"
+        },
+        {
+          "engine": "CrowdStrike",
+          "category": "malicious",
+          "result": "win/malicious_confidence_60% (D)"
+        },
+        {
+          "engine": "APEX",
+          "category": "malicious",
+          "result": "Malicious"
+        },
+        {
+          "engine": "Cynet",
+          "category": "malicious",
+          "result": "Malicious (score: 100)"
+        },
+        {
+          "engine": "McAfeeD",
+          "category": "malicious",
+          "result": "ti!AAFF926E1315"
+        }
+      ],
+      "analysis_time_utc": "2026-11-05T04:09:42.000Z",
+      "report_url": "https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122"
+    },
+    {
+      "file": "InsaneDBNO-Launch.exe",
+      "sha256": "6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b",
+      "size": 164352,
+      "last_analysis_date": 1793851834,
+      "stats": {
+        "malicious": 6,
+        "suspicious": 0,
+        "undetected": 65,
+        "harmless": 0,
+        "timeout": 0,
+        "confirmed-timeout": 0,
+        "failure": 0,
+        "type-unsupported": 4
+      },
+      "detections": [
+        {
+          "engine": "Bkav",
+          "category": "malicious",
+          "result": "W32.Malware.217D8F74"
+        },
+        {
+          "engine": "CrowdStrike",
+          "category": "malicious",
+          "result": "win/malicious_confidence_90% (D)"
+        },
+        {
+          "engine": "APEX",
+          "category": "malicious",
+          "result": "Malicious"
+        },
+        {
+          "engine": "McAfeeD",
+          "category": "malicious",
+          "result": "ti!6C6DD34828FF"
+        },
+        {
+          "engine": "Microsoft",
+          "category": "malicious",
+          "result": "Trojan:Win32/Wacatac.B!ml"
+        },
+        {
+          "engine": "Malwarebytes",
+          "category": "malicious",
+          "result": "Malware.Heuristic.2518"
+        }
+      ],
+      "analysis_time_utc": "2026-11-05T04:10:34.000Z",
+      "report_url": "https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b"
+    }
+  ]
+}
