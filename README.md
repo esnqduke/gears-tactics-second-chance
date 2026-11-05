@@ -1,4 +1,4 @@
-# Gears Tactics - Insane DBNO
+# Gears Tactics: Second Chance
 
 An open-source mod that gives **fresh player-controlled units one Down But Not Out (DBNO) opportunity on Insane difficulty**.
 
@@ -23,7 +23,7 @@ The launcher checks the executable build and stops if unsupported. Game Pass/Mic
 ## Install and launch through Steam
 
 1. Close Gears Tactics.
-2. Download the ZIP from [Releases](https://github.com/esnqduke/gears-tactics-insane-dbno/releases) and extract the **entire** folder.
+2. Download the ZIP from [Releases](https://github.com/esnqduke/gears-tactics-second-chance/releases) and extract the **entire** folder.
 3. Run **Install.cmd**. It verifies the payload hashes and installs the two files into:
 
        %LOCALAPPDATA%\GearsTacticsInsaneDBNO\Mod
