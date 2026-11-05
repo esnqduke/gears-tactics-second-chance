@@ -67,7 +67,9 @@ See [VALIDATION.txt](VALIDATION.txt) for the evidence. These observations apply 
 
 ## Antivirus results
 
-See [ANTIVIRUS.md](ANTIVIRUS.md) for the local scan, online-report status, exact SHA-256 hashes and verified report links when available. Positive detections, if any, are reported as returned by the scanner.
+VirusTotal file reports: [DLL](https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122) and [launcher](https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b). These links were supplied by the maintainer; their SHA-256 values match the release files. The assistant could not read the dynamic engine results, so no online detection count or clean-result claim is made.
+
+See [ANTIVIRUS.md](ANTIVIRUS.md) for the verified local Kaspersky scan, exact hashes and verification limits.
 
 The manifest and published checksums identify the actual tested DLL and launcher. No Microsoft or game DLL is included.
 

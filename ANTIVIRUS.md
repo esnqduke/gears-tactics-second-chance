@@ -21,13 +21,20 @@ Installed Kaspersky 21.26 scanned both payloads on 2026-11-05:
 
 This is a local Kaspersky result, not an online multi-engine scan. No antivirus exclusions or protection settings were changed.
 
-## Online multi-engine scan
+## Online VirusTotal report links
 
-**No completed online result has been independently verified yet.** A hash-search URL is not being presented as a completed scan.
+The maintainer supplied these VirusTotal file-report links:
 
-As of 2026-11-05, no VirusTotal API key or authenticated browser session was available in the release environment. VirusTotal requires an account-issued key for API submissions. A submission to the official public Jotti form was also attempted; the connection was reset during upload and no scan job or result URL was returned. These failures are not scan results.
+| Payload | Report |
+| --- | --- |
+| InsaneDBNO.dll | [View DLL report](https://www.virustotal.com/gui/file/aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122) |
+| InsaneDBNO-Launch.exe | [View launcher report](https://www.virustotal.com/gui/file/6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b) |
 
-The requested release remains a draft pending verified online reports for both payloads. No claim of an online clean result is made.
+The SHA-256 values in both URLs were checked against the exact release binaries and manifest.json.
+
+**Verification limit:** the release assistant could not retrieve VirusTotal's dynamic report contents. Engine counts, detection names, analysis dates and completion status were not independently verified and are not asserted here. Open the reports to inspect the current results; a file-report URL alone does not prove that an analysis has completed or that a file is clean.
+
+The local Kaspersky results above were verified separately. No online zero-detection or false-positive claim is made.
 
 ## What the executable does
 
