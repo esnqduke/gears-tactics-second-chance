@@ -1,0 +1,19 @@
+Gears Tactics Insane DBNO0.2.2 - VERIFIED RELEASE
+Supported EXE: AMD64, TimeDateStamp6036BD2C, SizeOfImage0B57AA00.
+DLL SHA256: aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122
+Launcher SHA256: 6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b
+
+AUTOMATED PASS: core fixture covers correct GameInstance->WorldContext->World mission path, difficulty/native-class guards, soldiers and hero arrays,0/-1sentinels, CDO/destroyed objects, invalid pointers, unchanged adjacent data, reload.
+AUTOMATED PASS: real late LoadLibraryW loading/idempotence in isolated native child.
+RUNTIME PASS: real Steam->wrapper->original game chain, wrapper exits after30sec, only canonical DLL loaded from external Mod folder. Clean-start game responsive after215sec. Archives/cache and stock XInput unchanged.
+RUNTIME PASS: actual current-level player-pawn scan (CharacterData weak references) found4 active pawns, all effective FatigueSteps2, HP500/560/500/500, TurnLastEnteredDBNO=-1 at fresh mission verification. Automatic application on repeated mission load confirmed.
+
+USER GAMEPLAY CONFIRMATIONS:
+- Fresh mission: scout and Raybern entered first DBNO; mission continued.
+- Ordinary soldier: revived after first DBNO, died at second lethal hit.
+- Gabe: first DBNO left mission active.
+- Gabe: second lethal/DBNO attempt caused death and expected mission failure.
+Execution death was recorded separately and was not used as sole evidence of the one-DBNO limit.
+
+KASPERSKY FINAL: both exact payload files scanned,2OK,0detected,0suspicions,0skipped,0errors. See Kaspersky-scan-0.2.2-final.txt.
+All required gameplay checks have now been reported successful. Evidence applies to this supported build and these exact binaries.

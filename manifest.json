@@ -1,0 +1,11 @@
+{
+  "name": "Gears Tactics Insane DBNO",
+  "version": "0.2.2",
+  "mode": "steam-late-load",
+  "targetFatigueSteps": 2,
+  "architecture": "x64",
+  "gameTimeDateStamp": "6036BD2C",
+  "gameSizeOfImage": "0B57AA00",
+  "dllSHA256": "aaff926e1315822157d308d05e4df8aa225f12faecc286fe5057b8849d7fc122",
+  "launcherSHA256": "6c6dd34828ffdc5194597fdb39744618bba1bb33fab96a893100524bfc6c3c3b"
+}
